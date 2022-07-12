@@ -1,3 +1,23 @@
+### 树莓派的kali里安装
+需要更换源，自行更换，之后
+apt update
+apt upgrade
+apt install kalipi-kernel-headers
+apt search kalipi-kernel
+reboot
+然后直接进行下面教程中的过程，无需安装linux-kernel
+当前版本如下：
+┌──(root㉿kali-raspberry-pi)-[~]
+└─# apt search kalipi-kernel
+Sorting... Done
+Full Text Search... Done
+kalipi-kernel/kali-pi 5.15.44-20220704 arm64 [upgradable from: 5.10.103-20220504]
+  Kali-Pi linux kernel
+
+kalipi-kernel-headers/kali-pi,now 5.15.44-20220704 arm64 [installed]
+  Header files for the Kali-Pi Linux kernel
+适用于ARM64的kali pi
+安装完成之后直接执行sudo ./install-driver.sh即可
 -----
 
 #### Click [here](https://github.com/morrownr/USB-WiFi) for USB WiFi Adapter Information for Linux
